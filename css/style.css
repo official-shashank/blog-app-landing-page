@@ -1,0 +1,153 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.navigation {
+  height: 74px;
+  /* background-color: red; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: var(--font1);
+}
+.nav-left {
+  font-size: 20px;
+  display: flex;
+}
+.nav-left ul li {
+  list-style: none;
+  margin: 0 14px;
+  font-family: var(--font2);
+}
+
+.nav-left ul li a {
+  text-decoration: none;
+  color: black;
+}
+.nav-left ul li a:hover {
+  color: var(--bg-primary);
+}
+.nav-left ul {
+  display: flex;
+  align-items: center;
+  margin: 0 77px;
+  font-size: 16px;
+}
+.nav-left span {
+  font-size: 25px;
+  font-weight: 600;
+}
+.content {
+  display: flex;
+  height: 395px;
+  /* background-color: blue; */
+}
+.content-left {
+  flex: 6;
+  font-family: var(--font1);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.content-right {
+  flex: 6;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.content-right img {
+  height: 200px;
+}
+
+.home-articles {
+  padding-top: 12px;
+
+  /* height: 455px; */
+  /* background-color: red; */
+}
+.home-articles-items {
+  display: flex;
+  flex-wrap: wrap;
+}
+.home-article {
+  display: flex;
+  width: 50%;
+  flex-wrap: nowrap;
+}
+.home-article img {
+  flex: 4;
+  width: 300px;
+}
+.home-article-content {
+  flex: 8;
+  align-self: center;
+  padding: 0 25px;
+}
+.footer {
+  height: 50px;
+  background-color: green;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+.btn:hover {
+  color: white;
+  background-color: var(--bg-primary);
+}
+
+@media only screen and (max-width: 1500px) {
+  .home-article {
+    width: 100%;
+  }
+  .nav-right {
+    display: flex;
+  }
+  .nav {
+    width: 100vw;
+  }
+  .content {
+    height: 420px;
+  }
+}
+@media only screen and (max-width: 700px) {
+  .content {
+    height: 530px;
+    position: relative;
+    top: 15px;
+    flex-direction: column-reverse;
+  }
+  .navigation {
+    height: 90px;
+    flex-direction: column;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .home-article {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+  }
+  hr {
+    margin-top: 20px;
+  }
+  .home-articles {
+    margin-top: 20px;
+  }
+  .navigation {
+    align-items: center;
+    justify-content: space-between;
+  }
+  .nav-left span {
+    margin-left: 71px;
+    font-size: 25px;
+    font-weight: 600;
+  }
+  .content {
+    justify-content: center;
+    align-items: center;
+  }
+}
